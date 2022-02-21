@@ -1,0 +1,30 @@
+#+TITLE: Ox Docusaurus
+
+* TODO support filename for source block
+ ```jsx title="/src/components/HelloCodeTitle.js"
+    function HelloCodeTitle(props) {
+      return <h1>Hello, {props.name}</h1>;
+    }
+    ```
+* TODO support Admonitions
+* TODO support <BrowserWindow> css style
+<BrowserWindow>
+
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+</BrowserWindow>
+
+* TODO support line highlighting
+https://docusaurus.io/docs/markdown-features/code-blocks#line-highlighting
+
+* TODO support inline svg
+yes, inline svg supports search directly and also link works too,
+so this is the way to go
+
+import DocusaurusSvg from './docusaurus.svg';
+
+<DocusaurusSvg />;
