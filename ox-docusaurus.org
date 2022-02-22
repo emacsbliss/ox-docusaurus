@@ -26,6 +26,24 @@ https://docusaurus.io/docs/markdown-features/code-blocks#line-highlighting
 yes, inline svg supports search directly and also link works too,
 so this is the way to go
 
-import DocusaurusSvg from './docusaurus.svg';
+After some trial and error, it turns out there are some quirks we need to be aware to make inline svg work..
 
-<DocusaurusSvg />;
+first the identifier after import needs to be camelcase, so this works:
+#+begin_src javascript
+import OsSvg from '/static/img/os.svg'
+#+end_src
+
+this won't work:
+#+begin_src javascript
+import osSvg from '/static/img/os.svg'
+#+end_src
+
+then there should be blank line after the import line and the line where this svg is used:
+
+#+begin_src javascript
+import OsSvg from '/static/img/os.svg'
+
+<OsSvg/>
+#+end_src
+
+the import can appear anywhere in the md file, doesn't have to be at beginning
