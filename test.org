@@ -1,0 +1,33 @@
+#+Title: test ox-docusaurus
+#+OPTIONS: toc:nil
+
+* code highlighting
+
+a code sample
+#+begin_src cpp
+int main(int argc, char *argv[]) {
+    return 0;
+}
+#+end_src
+
+* Admonitions
+** note
+#+begin_note
+this is a note admonition
+#+end_note
+** tip
+#+begin_tip
+this is a cool tip
+#+end_tip
+** info
+#+begin_info
+this is a good info
+#+end_info
+** caution
+#+begin_caution
+this is a caution
+#+end_caution
+** danger
+#+begin_danger
+this is very dangerous
+#+end_danger

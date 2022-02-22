@@ -1,12 +1,13 @@
 #+TITLE: Ox Docusaurus
 
+* DONE add title into front matter
+* DONE support Admonitions
 * TODO support filename for source block
  ```jsx title="/src/components/HelloCodeTitle.js"
     function HelloCodeTitle(props) {
       return <h1>Hello, {props.name}</h1>;
     }
     ```
-* TODO support Admonitions
 * TODO support <BrowserWindow> css style
 <BrowserWindow>
 
